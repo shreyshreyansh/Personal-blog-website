@@ -1,0 +1,17 @@
+<%# Adding an header ejs to the home page %>
+<%- include('partials/header'); -%>
+
+<h1>Home</h1>
+<p>
+  <%= homeStartingContent %>
+</p>
+
+<%# Fetching data from the posts collection and showing on the home page %>
+<% posts.forEach( function(post) { %>
+    <h1>   <%=   post.title   %>   </h1>
+    <p>   <%=  post.body.substring(0,100) + "..."   %>
+    <a href= "/posts/<%= post.title %>" >Read More</a> </p>
+<% }); %>
+
+<%# Adding an footer ejs to the home page %>
+<%- include('partials/footer'); -%>

@@ -1,0 +1,18 @@
+<%# Adding an header ejs to the compose page %>
+<%- include('partials/header'); -%>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Title</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="postTitle" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Post</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="postBody" autocomplete="off"></textarea>
+  </div>
+  <button type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+
+<%# Adding an footer ejs to the compose page %>
+<%- include('partials/footer'); -%>
