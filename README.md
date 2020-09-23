@@ -1,5 +1,5 @@
 # Personal-blog-website
-A daily diary website for one who loves to write journals.
+***A daily diary website for one who loves to write journals.***
 
 To use the daily journal :
 
